@@ -240,7 +240,7 @@ function extendMemoryDB(MemoryDB) {
   return ShareDBMingo;
 }
 
-ShareDBMingo = extendMemoryDB(require('sharedb').MemoryDB);
+var ShareDBMingo = extendMemoryDB(require('sharedb').MemoryDB);
 ShareDBMingo.extendMemoryDB = extendMemoryDB;
 
 module.exports = ShareDBMingo;
